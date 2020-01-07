@@ -1,0 +1,8 @@
+<!--pages/echarts/index.wxml-->
+
+<view class="btn-area">
+  <navigator url="/pages/echarts/bar/index" open-type="navigate" hover-class="other-navigator-hover">bar</navigator>
+</view>
+<view class="btn-area">
+  <navigator url="/pages/echarts/pie/index" open-type="navigate" hover-class="other-navigator-hover">pie</navigator>
+</view>

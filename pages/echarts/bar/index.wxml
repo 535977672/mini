@@ -1,0 +1,5 @@
+<!--pages/echarts/bar/index.wxml-->
+<!-- 注意此处的 .container，新建小程序项目后，其中 app.wxss 中默认自动生成的此 class 与本 demo 中的可能不一致，导致图表不能正常显示，只显示空白。请注意参考 app.wxss 修改样式，保证图表的初始化的时候是有宽度和高度的。 -->
+<view class="container">
+  <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+</view>

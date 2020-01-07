@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<!--html-->
+<import src="../../pulgs/wxParse/wxParse.wxml"/>
+<!--html-->
+<view class="container" wx:if="{{show}}">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto" data-id="213" bindtap='viewTap'>{{motto}}</text>
+  </view>
+  <view>
+    <component-componentA prop-aa="我是父元素变量" bindmyclick="mycomponentclick">
+      <!-- 这部分内容将被放置在组件 <slot> 的位置上 -->
+      <view>这里是插入到组件slot中的内容</view>
+    </component-componentA>
+  </view>
+  <rich-text nodes="{{html}}"></rich-text>
+  <view>
+    <template is="wxParse" data="{{wxParseData:mytext.nodes}}"/>
+  </view>
+
+  
+  <view bindtap="addcomponent">点击动态添加组件</view>
+  <view wx:if="{{addcomponent_show}}">
+    <component-componentA prop-aa="我是父元素变量" bindmyclick="mycomponentclick">
+      <!-- 这部分内容将被放置在组件 <slot> 的位置上 -->
+      <view>动态添加的组件</view>
+    </component-componentA>
+  </view>
+</view>

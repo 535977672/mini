@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "bar",
+  "usingComponents": {
+    "ec-canvas": "../../../component/echarts/ec-canvas/ec-canvas"
+  }
+}

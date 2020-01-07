@@ -1,0 +1,10 @@
+/* pages/echarts/index.wxss */
+.btn-area{
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  margin: 30rpx 60rpx;
+  background-color:  #ccc;
+  color: white;
+  border-radius: 50rpx;
+}

@@ -1,0 +1,9 @@
+<!--pages/menu/index.wxml-->
+
+
+<view class="btn-area">
+  <navigator url="/pages/picker/picker" open-type="navigate" hover-class="other-navigator-hover">picker</navigator>
+</view>
+<view class="btn-area">
+  <navigator url="/pages/echarts/index" open-type="navigate" hover-class="other-navigator-hover">echarts</navigator>
+</view>

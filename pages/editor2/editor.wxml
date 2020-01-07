@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="page-body">
+    <view class="page-section">
+      <view class="page-section-spacing">
+        <view class="flex-wrp" style="flex-direction:row;">
+          <view class="flex-item demo-text-1" bindtap="uploadimg">text1</view>
+          <image class="img1" wx:if="{{show}}" src="{{img1}}"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>    

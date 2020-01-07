@@ -1,0 +1,67 @@
+{
+  "pages": [
+    "pages/menu/index",
+    "pages/editor/editor",
+    "pages/editor2/editor",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/picker/picker",
+    "pages/echarts/index",
+    "pages/echarts/bar/index",
+    "pages/echarts/pie/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "white",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "我的微信小程序",
+    "navigationStyle": "default",
+    "backgroundColor": "#ccc",
+    "backgroundTextStyle": "dark",
+    "backgroundColorTop": "#232323",
+    "backgroundColorBottom": "#232323",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 0
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#eca",
+    "backgroundColor": "white",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/u1.png",
+        "selectedIconPath": "images/u2.png"
+      },
+      {
+        "pagePath": "pages/editor/editor",
+        "text": "编辑器",
+        "iconPath": "images/t1.png",
+        "selectedIconPath": "images/t2.png"
+      },
+      {
+        "pagePath": "pages/editor2/editor",
+        "text": "上传",
+        "iconPath": "images/u1.png",
+        "selectedIconPath": "images/t2.png"
+      },
+      {
+        "pagePath": "pages/menu/index",
+        "text": "菜单",
+        "iconPath": "images/my_order.png",
+        "selectedIconPath": "images/my_order.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 30000,
+    "connectSocket": 30000,
+    "uploadFile": 60000,
+    "downloadFile": 60000
+  },
+  "debug": true,
+  "workers": "workers",
+  "sitemapLocation": "sitemap.json"
+}
